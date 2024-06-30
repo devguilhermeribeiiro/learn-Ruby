@@ -1,25 +1,16 @@
-require './produto.rb'
-
+# frozen_string_literal: true
 class Market
   attr_accessor :produto
 
   def initialize(produto)
-    self.produto = produto
+    @produto = produto
   end
-  
-  def produto=(produto)
-    if produto.is_a?(Produto)
-      @produto = produto
-      puts "grilla"
-    else
-      raise "doidera vey"
-    end
+
+  def produto_class
+    puts @produto.class
   end
 
   def buy
     puts "You buyed #{@produto.name}, it's cost #{@produto.price}"
   end
-
 end
- 
-

@@ -1,7 +1,7 @@
-require './produto.rb'
-require './mercado.rb'
+require './produto'
+require './mercado'
 
-produto = Produto.new("Aveia", 5)
-mercado = Market.new(produto)
-mercado.produto
+anything = Carro.new('HONDA Civic', 37_000)
+mercado = Market.new(anything)
+mercado.produto_class
 mercado.buy
