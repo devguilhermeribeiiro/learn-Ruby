@@ -30,8 +30,4 @@ module Person
   end
 end
 
-cli_args = ARGV
-arg1 = cli_args[0]
-arg2 = cli_args[1]
-
-Person::Physical.new(arg1, arg2).add
+Person::Physical.new(ARGV[0], ARGV[1]).add
